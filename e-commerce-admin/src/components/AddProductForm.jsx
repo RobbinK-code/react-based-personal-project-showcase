@@ -17,7 +17,6 @@ export default function AddProductForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Format the new product object
     const newProduct = {
       ...formData,
       price: parseFloat(formData.price) // Ensure price is stored as a number
@@ -26,7 +25,6 @@ export default function AddProductForm() {
     addProduct(newProduct);
     alert('Product added successfully!');
     
-    // Clear form
     setFormData({ name: '', description: '', origin: '', price: '' });
   };
 
