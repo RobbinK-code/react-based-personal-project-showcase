@@ -1,0 +1,23 @@
+{
+  "store_info": {
+    "name": "Coffee R Us",
+    "description": "The go-to store for coffee administrators.",
+    "phone_number": "0796857594"
+  },
+  "products": [
+    {
+      "id": "1",
+      "name": "Vanilla Bean",
+      "description": "Medium Roast, nutty flavor",
+      "origin": "Columbia",
+      "price": 10.00
+    },
+    {
+      "id": "2",
+      "name": "House Blend",
+      "description": "Dark Roast, Rich flavor",
+      "origin": "Vietnam",
+      "price": 12.00
+    }
+  ]
+}
