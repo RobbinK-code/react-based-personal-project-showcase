@@ -75,7 +75,7 @@ body {
   color: #F0F0F0;
 }
 
-/* 2. Shop Page Styling (image_1.png) */
+/* 2. Shop Page Styling. */
 /* Sets up the two-column layout: sidebar on left, product grid on right */
 .shop-page {
   display: flex;
@@ -98,7 +98,7 @@ body {
   width: 100%;
   padding: 0.6rem;
   margin-bottom: 1.5rem;
-  background-color: #D3D3D3; /* Light grey/beige color from image_1.png */
+  background-color: #D3D3D3; 
   border: none;
   border-radius: 20px; /* Heavily rounded, capsule-like edges */
   font-size: 1rem;
@@ -132,7 +132,7 @@ body {
   background-color: #8C6F56;
 }
 
-/* Product Grid (image_1.png) */
+/* Product Grid */
 .product-grid {
   flex: 1; /* Take up the remaining width */
   display: grid;
@@ -181,12 +181,11 @@ body {
 }
 
 /* 2. Global Header / Navigation Styling */
-/* This styles the header bar seen at the top of image_0, image_1, and image_2.png. */
+/* This styles the header bar. */
 .app-header {
-  /* Matches the cooler, lighter brown header color seen in image_0.png */
   background-color: #9A8372;
   display: flex;
-  justify-content: center; /* Center the links as in image_0.png */
+  justify-content: center; 
   padding: 1.5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
@@ -194,13 +193,12 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 3rem; /* Space out the links like in image_0.png */
+  gap: 3rem; 
 }
 
 /* Style for individual navigation links */
 .nav-links a {
   text-decoration: none;
-  /* Matches the light beige/grey color for inactive text in image_0.png */
   color: #E0E0E0;
   font-size: 1.2rem;
   padding-bottom: 0.2rem;
@@ -208,7 +206,7 @@ body {
 }
 
 /* Active Link & Hover Styling */
-/* Styles the active link to use a solid white bottom border, like 'Home' in image_0.png and 'Shop' in image_1.png. */
+/* Styles the active link to use a solid white bottom border. */
 .nav-links a:hover,
 .nav-links a.active {
   color: white;
@@ -218,7 +216,7 @@ body {
 /* --- Phase 5: Component-Specific Page Styling --- */
 
 /* 1. Home / Landing Page Styling */
-/* Targets the layout from image_0.png, with large centered title text. */
+/* Targets the layout, with large centered title text. */
 .home-page {
   display: flex;
   flex-direction: column;
@@ -230,24 +228,19 @@ body {
 }
 
 .home-page h1 {
-  /* Large title "Coffee R Us" from image_0.png */
   font-size: 4.5rem;
   font-weight: normal;
   margin-bottom: 0.5rem;
-  /* Match the deep black/dark color for the title in image_0.png */
   color: #1A1A1A;
 }
 
 .home-page p {
-  /* Subtitle text from image_0.png */
   font-size: 1.5rem;
   max-width: 600px;
-  /* Matches the lighter beige/grey description text color in image_0.png */
   color: #E0E0E0;
 }
 
 /* 2. Shop Page Styling */
-/* Mimics the layout from image_1.png, with a left filter sidebar and a right product grid. */
 .shop-page {
   display: flex;
   padding: 2rem;
@@ -257,7 +250,6 @@ body {
 
 /* Sidebar / Filter Area */
 .filter-sidebar {
-  /* Cooler-toned brown sidebar background from image_1.png */
   background-color: #9A8372;
   flex: 0 0 250px; /* Fixed width of 250px */
   padding: 1.5rem;
@@ -265,11 +257,9 @@ body {
 }
 
 .search-input {
-  /* Styles the capsule-shaped search input from image_1.png */
   width: 100%;
   padding: 0.6rem;
   margin-bottom: 1.5rem;
-  /* Matches the light grey/beige color from image_1.png */
   background-color: #D6D6D6;
   border: none;
   border-radius: 20px; /* Capsule shape */
@@ -280,7 +270,6 @@ body {
   color: #E0E0E0;
 }
 
-/* Styles individual location check items from image_1.png */
 .location-filter label {
   display: flex;
   align-items: center;
@@ -288,7 +277,6 @@ body {
   font-size: 1rem;
 }
 
-/* Style the square checkboxes for locations in image_1.png */
 .location-filter input[type="checkbox"] {
   appearance: none;
   width: 1rem;
@@ -306,7 +294,7 @@ body {
 }
 
 /* Product Grid */
-/* Uses CSS Grid to create a multi-column layout for product cards from image_1.png. */
+/* Uses CSS Grid to create a multi-column layout for product cards. */
 .product-grid {
   flex: 1; /* Takes up all remaining width */
   display: grid;
@@ -317,7 +305,6 @@ body {
 
 /* Individual Product Card */
 .product-card {
-  /* Matches the light grey/beige card color from image_1.png */
   background-color: #D6D6D6;
   padding: 1rem;
   border-radius: 12px; /* Smooth, rounded corners for cards */
@@ -327,7 +314,7 @@ body {
   color: #1A1A1A;
 }
 
-/* Typography inside cards matches image_1.png */
+
 .product-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -341,7 +328,7 @@ body {
 }
 
 /* 3. Admin / Form Page Styling */
-/* Targets the layout from image_2.png, with a centered, rounded container for the form. */
+/* Targets the layout , with a centered, rounded container for the form. */
 .admin-page {
   display: flex;
   justify-content: center;
