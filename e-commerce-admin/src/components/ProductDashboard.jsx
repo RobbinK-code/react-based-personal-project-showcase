@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useProducts } from '../hooks/useProducts';
 
 export default function ProductDashboard() {
-  const { products, loading, error, updateProductPrice } = useProducts();
+  const { products, loading, error, updateProductPrice, deleteProduct } = useProducts();
   const [searchTerm, setSearchTerm] = useState('');
   const [newPrices, setNewPrices] = useState({}); // Stores price inputs by product ID
 
