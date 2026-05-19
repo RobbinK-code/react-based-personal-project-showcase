@@ -32,7 +32,7 @@ export function useProducts() {
       body: JSON.stringify(newProduct),
     });
     const data = await res.json();
-    setProducts([...products, data]); // Update state without refreshing
+    setProducts([...products, data]);
   };
 
   // PATCH: Update product price
@@ -43,10 +43,33 @@ export function useProducts() {
       body: JSON.stringify({ price: parseFloat(newPrice) }),
     });
     const updatedProduct = await res.json();
-    
-    // Update local state
     setProducts(products.map(p => p.id === id ? updatedProduct : p));
   };
 
-  return { products, loading, error, addProduct, updateProductPrice };
+  // DELETE: Remove product
+  const deleteProduct = async (id) => {
+    try {
+      const res = await fetch(`${url}/${id}`, {
+        method: 'DELETE',
+      });
+      
+      if (!res.ok) {
+        throw new Error("Failed to delete product");
+      }
+      
+      // Remove from local state immediately
+      setProducts(products.filter(p => p.id !== id));
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  return { 
+    products, 
+    loading, 
+    error, 
+    addProduct, 
+    updateProductPrice, 
+    deleteProduct  // NEW
+  };
 }
