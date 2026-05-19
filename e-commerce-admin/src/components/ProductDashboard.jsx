@@ -69,7 +69,6 @@ export default function ProductDashboard() {
       </button>
     </div>
   </div>
-))}
         ))}
         {filteredProducts.length === 0 && <p>No products found.</p>}
       </div>
